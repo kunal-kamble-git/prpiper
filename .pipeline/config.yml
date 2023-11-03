@@ -1,0 +1,10 @@
+general:
+  buildTool: 'npm'
+  gitSshKeyCredentialsId: 'credentials-id-in-jenkins'
+  
+steps:
+  integrationArtifactDownload:
+    cpiApiServiceKeyCredentialsId: 'MRuGAhO1X1PGJEcSRUWL9iInANhOPwer'
+    integrationFlowId: 'TEST_SOAP'
+    integrationFlowVersion: '1.0.1'
+    downloadPath: ''
