@@ -3,7 +3,7 @@
 node(){
 	stage('init') {
 		
-		echo Hello
+		echo 'Hello World'
 		//integrationArtifactDownload script: this
 	}
 }
