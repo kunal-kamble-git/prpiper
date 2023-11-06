@@ -4,7 +4,7 @@ general:
   
 steps:
   integrationArtifactDownload:
-    cpiApiServiceKeyCredentialsId: 'MRuGAhO1X1PGJEcSRUWL9iInANhOPwer'
+    cpiApiServiceKeyCredentialsId: 'ServiceKeyCredential'
     integrationFlowId: 'TEST_SOAP'
     integrationFlowVersion: '1.0.1'
     downloadPath: './'
