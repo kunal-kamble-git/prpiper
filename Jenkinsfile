@@ -1,11 +1,13 @@
 @Library('piper-lib-os') _
 
-node(){
+node() {
 	stage('init') {
-		
-		echo 'Hello World'
+		deleteDir()
+		checkout scm
+	}
+	
+	stage('integrationArtifactDownload Command') {
+	
 		integrationArtifactDownload script: this
-
-		echo 'End of Script'
 	}
 }
