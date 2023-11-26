@@ -13,6 +13,6 @@ steps:
     cpiApiServiceKeyCredentialsId: ServiceKeyCredential
     integrationFlowId: AS2_Sender_Test
 
-  integrationArtifactDeploy:
+  integrationArtifactGetMplStatus:
     cpiApiServiceKeyCredentialsId: ServiceKeyCredential
     integrationFlowId: AS2_Sender_Test
