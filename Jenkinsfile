@@ -9,5 +9,7 @@ node() {
 	stage('integrationArtifactDownload Command') {
 	
 		integrationArtifactDownload script: this
+		integrationArtifactDeploy script: this
+ 	        integrationArtifactGetMplStatus script: this
 	}
 }
