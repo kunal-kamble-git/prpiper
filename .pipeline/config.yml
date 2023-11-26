@@ -8,3 +8,11 @@ steps:
     integrationFlowId: AS2_Sender_Test
     integrationFlowVersion: 1.0.1
     downloadPath: ./iflows
+
+  integrationArtifactDeploy:
+    cpiApiServiceKeyCredentialsId: ServiceKeyCredential
+    integrationFlowId: AS2_Sender_Test
+
+  integrationArtifactDeploy:
+    cpiApiServiceKeyCredentialsId: ServiceKeyCredential
+    integrationFlowId: AS2_Sender_Test
