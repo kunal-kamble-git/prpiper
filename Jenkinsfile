@@ -10,6 +10,6 @@ node() {
 	
 		integrationArtifactDownload script: this
 		integrationArtifactDeploy script: this
- 	        integrationArtifactGetMplStatus script: this
+ 	       // integrationArtifactGetMplStatus script: this
 	}
 }
