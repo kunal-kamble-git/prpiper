@@ -15,7 +15,7 @@ node() {
 
 	stage('IntegrationArtifactRepositoryUpload') {
 
-		//integrationArtifactUpload script: this
+		integrationArtifactUpload script: this
 	}
 	stage('IntegrationArtifactDeploy') {
 		
