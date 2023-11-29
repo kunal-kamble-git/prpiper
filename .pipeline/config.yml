@@ -18,7 +18,7 @@ steps:
     integrationFlowId: AS2_Sender_Test
     integrationFlowName: AS2_Sender_Test
     packageId: TestAS2
-    filePath: 'MY_INTEGRATION_FLOW_Artifact_Relative_Path'
+    filePath: ./iflows/AS2_Sender_Test.zip
    // downloadPath: /MY_INTEGRATION_FLOW_DOWNLOAD_PATH
 
   integrationArtifactGetMplStatus:
