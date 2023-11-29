@@ -6,18 +6,18 @@ node() {
 		checkout scm
 	}
 	
-	stage('integrationArtifactDownload') {
+	stage('integration Artifact Download') {
 	
 		integrationArtifactDownload script: this
 		
  	       // integrationArtifactGetMplStatus script: this
 	}
 
-	stage('IntegrationArtifactRepositoryUpload') {
+	stage('Integration Artifact Repository Upload') {
 
 		integrationArtifactUpload script: this
 	}
-	stage('IntegrationArtifactDeploy') {
+	stage('Integration Artifact Deploy') {
 		
 		integrationArtifactDeploy script: this
 	}
