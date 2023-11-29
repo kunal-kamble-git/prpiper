@@ -1,6 +1,5 @@
 general:
- // buildTool: 'npm'
- // gitSshKeyCredentialsId: 'credentials-id-in-jenkins'
+
   
 steps:
   integrationArtifactDownload:
@@ -19,8 +18,4 @@ steps:
     integrationFlowName: AS2_Sender_Test
     packageId: TestAS2
     filePath: ./iflows/AS2_Sender_Test.zip
-   // downloadPath: /MY_INTEGRATION_FLOW_DOWNLOAD_PATH
-
-  integrationArtifactGetMplStatus:
-    cpiApiServiceKeyCredentialsId: ServiceKeyCredential
-    integrationFlowId: AS2_Sender_Test
+   
