@@ -13,6 +13,14 @@ steps:
     cpiApiServiceKeyCredentialsId: ServiceKeyCredential
     integrationFlowId: AS2_Sender_Test
 
+  integrationArtifactUpload:
+    cpiApiServiceKeyCredentialsId: TrialServiceKey
+    integrationFlowId: AS2_Sender_Test
+    integrationFlowName: AS2_Sender_Test
+    packageId: TestAS2
+    filePath: 'MY_INTEGRATION_FLOW_Artifact_Relative_Path'
+   // downloadPath: /MY_INTEGRATION_FLOW_DOWNLOAD_PATH
+
   integrationArtifactGetMplStatus:
     cpiApiServiceKeyCredentialsId: ServiceKeyCredential
     integrationFlowId: AS2_Sender_Test
