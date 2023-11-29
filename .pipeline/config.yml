@@ -10,7 +10,7 @@ steps:
     downloadPath: ./iflows
 
   integrationArtifactDeploy:
-    cpiApiServiceKeyCredentialsId: TrialServiceKey
+    cpiApiServiceKeyCredentialsId: ServiceKeyCredential
     integrationFlowId: AS2_Sender_Test
 
   integrationArtifactGetMplStatus:
