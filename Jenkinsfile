@@ -19,6 +19,6 @@ node() {
 	}
 	stage('IntegrationArtifactDeploy') {
 		
-		//integrationArtifactDeploy script: this
+		integrationArtifactDeploy script: this
 	}
 }
