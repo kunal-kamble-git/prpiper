@@ -13,7 +13,7 @@ node() {
  	       // integrationArtifactGetMplStatus script: this
 	}
 
-	stage('IntegrationArtifactRepositoryUpload') {
+	stage('integrationArtifactUpload') {
 
 		integrationArtifactUpload script: this
 	}
