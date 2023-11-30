@@ -14,8 +14,8 @@ node() {
 
 	stage('Artifact Repository Upload') {
 
-		sh "chmod +x ./scripts/gitupload.sh"
-		sh "./scripts/gitupload.sh"
+		sh "chmod +x /var/jenkins_home/workspace/prpiper/scripts/gitupload.sh"
+		sh "/var/jenkins_home/workspace/prpiper/scripts/gitupload.sh"
 		
 	
 	}
