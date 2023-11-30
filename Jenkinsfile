@@ -14,9 +14,8 @@ node() {
 
 	stage('Artifact Repository Upload') {
 
-		steps {
-			sh './gitupload.sh'
-		}
+		sh './gitupload.sh'
+		
 	
 	}
 
