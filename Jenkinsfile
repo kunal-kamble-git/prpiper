@@ -14,8 +14,8 @@ node() {
 
 	stage('Artifact Repository Upload') {
 
-		sh "chmod +x gitupload.sh"
-		sh './gitupload.sh'
+		sh "chmod +x ./scripts/gitupload.sh"
+		sh './scripts/gitupload.sh'
 		
 	
 	}
