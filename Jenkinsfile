@@ -1,9 +1,16 @@
 @Library('piper-lib-os') _
 
 node() {
-	stage('init') {
+	stage('Initialize') {
 		deleteDir()
 		checkout scm
+	}
+
+
+	stage('Modify Piper Libs') {
+
+		
+		
 	}
 	
 	stage('integrationArtifactDownload') {
