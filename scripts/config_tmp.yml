@@ -17,5 +17,5 @@ steps:
     integrationFlowId: FLWID
     integrationFlowName: FLWNM
     packageId: PKGID
-    filePath: ./iflows/*.zip
+    filePath: ./iflows/FLWID.zip
    
