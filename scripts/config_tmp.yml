@@ -1,0 +1,21 @@
+general:
+
+  
+steps:
+  integrationArtifactDownload:
+    cpiApiServiceKeyCredentialsId: DWNENV
+    integrationFlowId: FLWID
+    integrationFlowVersion: FLWV
+    downloadPath: ./iflows
+
+  integrationArtifactDeploy:
+    cpiApiServiceKeyCredentialsId: DPLENV
+    integrationFlowId: FLWID
+
+  integrationArtifactUpload:
+    cpiApiServiceKeyCredentialsId: DPLENV
+    integrationFlowId: FLWID
+    integrationFlowName: FLWNM
+    packageId: PKGID
+    filePath: ./iflows/*.zip
+   
