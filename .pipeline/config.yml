@@ -3,7 +3,7 @@ general:
   
 steps:
   integrationArtifactDownload:
-    cpiApiServiceKeyCredentialsId: ServiceKeyCredential
+    cpiApiServiceKeyCredentialsId: DevEnv
     integrationFlowId: AS2_Sender_Test
     integrationFlowVersion: 1.0.1
     downloadPath: ./iflows
