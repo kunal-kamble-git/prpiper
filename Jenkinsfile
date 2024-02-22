@@ -7,7 +7,7 @@ node() {
 	}
 
 
-	stage('Modify Piper Libs') {
+	stage('Set Piper Lib') {
 
 		sh '''sed -e "s,DWNENV,${SourceEnv},g" \\
     			  -e "s,FLWID,${FlowId},g" \\
