@@ -1,0 +1,42 @@
+<project xmlns:if="ant:if">
+    <path id="classpath">
+        <fileset dir="." includes="onehub-test.jar"/>
+		<fileset dir="lib2" includes="enttoolkit.jar"/>		
+    </path>
+
+    <target name="test-regression">
+	    <mkdir dir="results" />
+    	<junit fork="true" 
+    		   printsummary="on" 
+    		   haltonfailure="false"
+    		   showoutput="true"
+    		   filtertrace="true">
+    		<formatter type="xml"/>
+    		<classpath refid="classpath"/>
+    		<!-- <formatter classname="akzonobel.onehub.test.report.XMLReport"/> -->
+		   	<test name="akzonobel.onehub.test.RegressionTest" todir="results" />
+		   	<!-- <jvmarg if:set="test.props"      value="-Dtest.props=${test.props}"/> -->
+		   	<!--jvmarg if:set="test.input.dir"  value="-Dtest.input.dir=${test.input.dir}"/>
+		   	<jvmarg if:set="test.output.dir" value="-Dtest.output.dir=${test.output.dir}"/>
+		   	<jvmarg if:set="filter.scenario" value="-Dfilter.scenario=${filter.scenario}"/>
+		   	<jvmarg if:set="filter.doctype"  value="-Dfilter.doctype=${filter.doctype}"/>
+		   	<jvmarg if:set="filter.sender"   value="-Dfilter.sender=${filter.sender}"/>
+		   	<jvmarg if:set="filter.receiver" value="-Dfilter.receiver=${filter.receiver}"/>
+		   	<jvmarg if:set="wm.host"         value="-Dwm.host=${wm.host}"/>
+		   	<jvmarg if:set="wm.port"         value="-Dwm.host=${wm.port}"/>
+		   	<jvmarg if:set="wm.user"         value="-Dwm.user=${wm.user}"/>			
+		   	<jvmarg if:set="wm.pass"         value="-Dwm.pass=${wm.pass}"/-->
+		   	<jvmarg if:set="log.level"       value="-Dorg.apache.commons.logging.simplelog.defaultlog=${log.level}"/>
+		</junit>
+
+		<junitreport todir="report">
+			<fileset dir="results">
+				<include name="TEST-*.xml"/>
+			</fileset>
+			<report todir="report"/>
+		</junitreport>
+
+    </target>
+
+</project>
+

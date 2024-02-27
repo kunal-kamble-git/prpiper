@@ -1,0 +1,9 @@
+log verbose ".\report\bc.log" 
+load <default> 
+criteria rules-based 
+compare rules-based 
+load "%1" "%2" 
+expand all 
+Select all 
+folder-report layout:side-by-side options:display-mismatches output-to:.\report\mismatches-list.html output-options:html-color 
+file-report layout:side-by-side options:display-mismatches,display-all output-to:.\report\mismatches-detail.html output-options:html-color 
